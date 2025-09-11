@@ -9,6 +9,16 @@ public class ScriptsActivator : MonoBehaviour
         activeScriptsInScene;
 
 
+    private void Awake()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        foreach(var scene in activeScriptsInScene.Keys)
+        {
+            ScriptsEnable(activeScriptsInScene[scene], scene == currentScene);
+        }
+    }
+
     void OnSceneUnloaded(Scene scene)
     {
         var prevName = scene.name;
