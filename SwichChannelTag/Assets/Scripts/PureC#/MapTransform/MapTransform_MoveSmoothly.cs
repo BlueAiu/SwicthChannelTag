@@ -52,6 +52,7 @@ public partial class MapTransform
     {
         if (_isSync) _myPhotonView.RPC(nameof(ExitProcess), RpcTarget.All);
         else ExitProcess();
+        _overlapPlayer.GetOverlapPlayers();
     }
 
 

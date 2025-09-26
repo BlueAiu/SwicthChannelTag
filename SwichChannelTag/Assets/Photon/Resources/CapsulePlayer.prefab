@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 4650887795326452129}
   - component: {fileID: 1659280601506932932}
   - component: {fileID: 5662769695230115391}
+  - component: {fileID: -4036408843317988412}
+  - component: {fileID: -6788337944823151593}
   m_Layer: 0
   m_Name: CapsulePlayer
   m_TagString: Player
@@ -147,6 +149,7 @@ MonoBehaviour:
     y: 0
   _hierarchyIndex: 0
   _myPhotonView: {fileID: 7362638265056822721}
+  _overlapPlayer: {fileID: -4036408843317988412}
 --- !u!114 &1659280601506932932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +179,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7c8e4aeb0d5d74bbd7e39e19ac1597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4036408843317988412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074817731734667574}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78593d791c70edc41be9d8fdffbef3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  writeLog: 1
+--- !u!114 &-6788337944823151593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074817731734667574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2aa0f34afad637469700aa6db82dfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScriptsInScene:
+    _list:
+    - key: MainScene
+      value:
+      - {fileID: -4036408843317988412}
 --- !u!1 &8972878540032162334
 GameObject:
   m_ObjectHideFlags: 0

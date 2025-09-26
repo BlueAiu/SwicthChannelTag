@@ -15,6 +15,7 @@ public partial class MapTransform : MonoBehaviour
     [Tooltip("ˆÊ’u")][SerializeField] MapVec _pos;
     [Tooltip("ŠK‘w”Ô†")][SerializeField] int _hierarchyIndex;
     [SerializeField] PhotonView _myPhotonView;
+    [SerializeField] GetOverlapPlayer _overlapPlayer;
 
     public Transform Target { get { return _target; } }//“®‚©‚·‘ÎÛ
 
